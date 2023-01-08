@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        h1:hover{
+            color: red;
+            background-color: blue;
+            border: 1px solid red;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input[type="text"]:focus{
+            width: 100px;
+            height: 10px;
+            color: white;
+            background-color: black;
+        }
+        .middle:visited{
+            color: white;
+            background-color: black;
+        }
+        li:first-child{
+            color: blue;
+        }
+        li:last-child{
+            background-color: green;
+        }
+        li:nth-child(2n+1){
+            background-color: gray;
+        }
+        h3::before{
+            content: 'Hell ';
+        }
+        .special::after{
+            content: ' gello';
+            background-color: blue;
+            font-size: 39px;
+        }
+        .position img{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .position{
+            margin-top: 300px;
+            position: relative;
+        }
+        #img-1{
+            position: relative; 
+             top: -150px;
+        }
+        #img-2{
+            position: absolute;
+            top: 20px;
+            left: 200px;
+            z-index: 2; 
+        }
+        #img-3{
+           z-index: 1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="position">
+        <img src="assets/images/1.png" alt="" id="img-1">
+        <img src="assets/images/angel.png" alt="" id="img-2">
+        <img src="assets/images/Frame 57.jpg" alt="" id="img-3">
+        <h1>This a  normal</h1>
+    <form action="">
+        <input type="text">
+    </form>
+    <a href="https://www.google.com" class="middle">goole a jao</a>
+    <a href="https://www.programminghero.com" >programming hero te jao</a>
+    <a href="https://www.google.com">facebook a jao</a>
+    <progress></progress>
+    <meter value="20"></meter>
+    <br>
+    <h3>Middle size -1</h3>
+    <h3 class="special">Middle size -2</h3>
+    <h3>Middle size -3</h3>
+    <h3 class="special">Middle size -4</h3>
+    <h3>Middle size -5</h3>
+    <h3 class="special">Middle size -6</h3>
+    <ul>
+        <li>ali</li>
+        <li>dalia</li>
+        <li>kalia</li>
+        <li>salia</li>
+        <li>jalia</li>
+        <li>charia</li>
+    </ul>
+    </div>
+
+    <h1>This a  normal</h1>
+    <form action="">
+        <input type="text">
+    </form>
+    <a href="https://www.google.com" class="middle">goole a jao</a>
+    <a href="https://www.programminghero.com" >programming hero te jao</a>
+    <a href="https://www.google.com">facebook a jao</a>
+    <progress></progress>
+    <meter value="20"></meter>
+    <br>
+    <h3>Middle size -1</h3>
+    <h3 class="special">Middle size -2</h3>
+    <h3>Middle size -3</h3>
+    <h3 class="special">Middle size -4</h3>
+    <h3>Middle size -5</h3>
+    <h3 class="special">Middle size -6</h3>
+    <ul>
+        <li>ali</li>
+        <li>dalia</li>
+        <li>kalia</li>
+        <li>salia</li>
+        <li>jalia</li>
+        <li>charia</li>
+    </ul>
+
+    
+</body>
+</html>
